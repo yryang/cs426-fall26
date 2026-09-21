@@ -15,7 +15,7 @@ As in production services, the provided backend services (as well as the network
 
 - Questions? post to [Ed] or email the teaching staff.
 
-**Submission deadline: 23:59 ET Thursday Sep 24, 2026**
+**Submission deadline: 23:59 ET Monday Sept 28, 2026**
 
 **Submission logistics** Submit a `.tar.gz` archive named after your NetID via
 Canvas. The Canvas assignment will be up a day or two before the deadline.
