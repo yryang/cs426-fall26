@@ -40,6 +40,7 @@ func (f *MockFetcher) Fetch() (string, bool) {
 	if f.index >= len(f.data) {
 		return "", false
 	}
+	v := f.data[f.index]
 	f.index++
 
 	// Don't hold the lock while simulating the delay
@@ -48,7 +49,7 @@ func (f *MockFetcher) Fetch() (string, bool) {
 	time.Sleep(f.delay + time.Duration(rand.Intn(10))*time.Millisecond)
 	f.mu.Lock()
 
-	return f.data[f.index-1], true
+	return v, true
 }
 
 func (f *MockFetcher) ActiveFetches() int32 {
